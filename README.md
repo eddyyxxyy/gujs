@@ -1,5 +1,13 @@
 # Programação em JavaScript
 
+<div>
+<img src = 
+"https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" 
+alt="Javascript-Badge">
+<img src = "https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=black" 
+alt="NPM-Badge">
+</div>
+
 Aqui neste repositório estão minhas **anotações** e realização de **exercicios** do curso da Geek University
 "Programação em JavaScript do básico ao avançado".
 
