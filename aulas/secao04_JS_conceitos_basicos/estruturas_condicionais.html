@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Seção 04 - Estruturas Condicionais</title>
+    </head>
+    <body>
+        <h1>Seção 04 - Estruturas Condicionais</h1>
+
+        <script>
+            var idade = 18;
+
+            if (idade >= 18) {
+                console.log('É maior de idade.');
+            } else {
+                console.log('É menor de idade.');
+            }
+
+            // Dica para verificar somente o valor
+            if (1 == "1") {
+                console.log('Sim, 1 == "1"');
+            } else {
+                console.log('Não, 1 === "1"');
+            }
+
+            // Dica para verificar valor e tipo de dado
+            if (1 === "1") {
+                console.log('Sim, 1 == "1"');
+            } else {
+                console.log('Não, 1 === "1"');
+            }
+
+            var sexo = "M";
+
+            switch (sexo) {
+                case "M":
+                    console.log('Masculino.');
+                    break;
+                case "F":
+                    console.log('Feminino.');
+                    break;
+                default:
+                    console.log('Desconhecido.');
+            }
+
+            // Código à ser simplificado:
+
+            var s = 'm';
+            var masculino;
+
+            if (s === 'm') {
+                masculino = true;
+            } else {
+                masculino = false;
+            }
+            console.log(masculino);
+
+            // Simplificando o código acima
+
+            var masc = (s === 'm');
+            console.log(masc);
+        </script>
+    </body>
+</html>
