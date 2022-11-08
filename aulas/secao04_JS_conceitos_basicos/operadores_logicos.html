@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seção 04 - Operadores lógicos</title>
+</head>
+<body>
+  <h1><strong>Seção 04 - Operadores lógicos em JS</strong></h1>
+
+  <script>
+    // Os operadores são and, or e not
+
+    var curso = 'JavaScript';
+    var legal = true;
+
+    // AND (ambas devem ser true)
+
+    if (curso === 'JavaScript' && legal === true) {
+      console.log('O curso de JavaScript é legal!');
+    }
+    else {
+      console.log('O curso não é de JS ou não é legal.');
+    }
+
+    // OR (pelo menos uma deve ser true)
+
+    if (curso === 'JavaScript' || legal === true) {
+      console.log('O curso de JavaScript é legal!');
+    }
+    else {
+      console.log('Ou o curso não é de JS ou não é ' +
+              'legal ou não são ambas as afirmações!');
+    }
+
+    // NOT (para fazer uma negação ou verificar se
+    // algo não é como esperado)
+
+    if (curso !== 'JavaScript') {
+      console.log('O curso não é de JS!');
+    }
+    else {
+      console.log('O curso é de JS!');
+    }
+  </script>
+</body>
+</html>
