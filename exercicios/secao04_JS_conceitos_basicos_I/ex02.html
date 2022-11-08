@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seção 04 - Exercício 2</title>
+</head>
+<body>
+  <h1><strong>Exercício 2</strong></h1>
+  <div>
+    <p>
+      Crie uma função que receba dois valores inteiros como
+      parâmetro e exiba todos os números ímpares
+      entre estes dois números (sem incluí-los).
+      <br><br>
+      Minha resolução:
+    </p>
+    <pre>
+      <code>
+        /**
+        * Returns the odds between two values
+        * @param {number} num1
+        * @param {number} num2
+        * @return {array}
+        */
+        function odds_between(num1, num2) {
+            let numbers = [];
+            for (let i = num1 + 1; i <= num2; i++) {
+                if (i % 2 === 1) {
+                    numbers.push(i);
+                }
+            }
+            return numbers;
+        }
+
+        console.log(odds_between(3, 50))
+      </code>
+    </pre>
+  </div>
+
+  <script>
+      /**
+       * Returns the odds between two values
+       * @param {number} num1
+       * @param {number} num2
+       * @return {array}
+       */
+    function odds_between(num1, num2) {
+        let numbers = [];
+        for (let i = num1 + 1; i <= num2; i++) {
+            if (i % 2 === 1) {
+                numbers.push(i);
+            }
+        }
+        return numbers;
+    }
+
+    console.log(odds_between(3, 50))
+  </script>
+</body>
+</html>
