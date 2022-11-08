@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seção 04 - Exercício 1</title>
+</head>
+<body>
+  <h1><strong>Exercícios 1</strong></h1>
+  <div>
+    <p>Crie uma função que receba um objeto no formato abaixo:</p>
+    <pre class="line-numbers">
+      <code class="language-javascript">
+        var cliente = {
+            nome: "Maria das Graças Xuxa Meneguel",
+            email: "xuxa@666.com",
+            telefone: "+55 11 66666-6666",
+            rua: "Rua dos Baixinhos",
+            numero: 666,
+            bairro: "Pinheiros",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+      </code>
+    </pre>
+    <p>
+      E retorne uma string com o seguinte formato:
+      O(a) cliente Maria das Graças Xuxa Meneguel mora em São Paulo, SP.
+    </p>
+  </div>
+
+  <script>
+    /**
+     * Retorna uma ‘string’ com o nome e endereço do cliente.
+     * @param {object} client
+     * @return {string}
+     */
+    function get_address_string(client) {
+      return `O(a) cliente ${client.nome} mora em ${client.cidade}, ${client.uf}.`
+    }
+
+    let cliente1 = {
+      nome: "Maria das Graças Xuxa Meneguel",
+      email: "xuxa@666.com",
+      telefone: "+55 11 66666-6666",
+      rua: "Rua dos Baixinhos",
+      numero: 666,
+      bairro: "Pinheiros",
+      cidade: "São Paulo",
+      uf: "SP"
+    };
+
+    let cliente2 = {
+      nome: "Edson Roberto de Souza Pimenta",
+      email: "edson.tibo@gmail.com",
+      telefone: "+55 11 12345-6789",
+      rua: "Rua Muy Fueda",
+      numero: 1917,
+      bairro: "Seminário",
+      cidade: "Cristais Paulista",
+      uf: "SP"
+    };
+
+    console.log(get_address_string(cliente1));
+    console.log(get_address_string(cliente2));
+  </script>
+</body>
+</html>
