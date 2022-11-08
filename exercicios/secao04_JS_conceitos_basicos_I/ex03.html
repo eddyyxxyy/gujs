@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seção 04 - Exercício 3</title>
+</head>
+<body>
+  <h1><strong>Exercício 3</strong></h1>
+  <div>
+    <p>
+      Crie uma função que receba um valor em anos de experiência
+      de um funcionário e retorne o nível de
+      experiência deste conforme:
+      <br>
+      <br>
+      De 0 a 2 anos: Júnior<br>
+      De 3 a 5 anos: Pleno<br>
+      De 6 acima: Senior<br>
+      <br>
+      <br>
+      Minha resolução:
+    </p>
+    <pre>
+      <code>
+        /**
+         * Returns the worker exp in a string
+         * @param {number} years_of_work
+         * @return {string}
+         */
+        function worker_exp(years_of_work) {
+            if (years_of_work >= 0 && years_of_work <= 2) {
+                return 'Junior';
+            }
+            else if (years_of_work > 2 && years_of_work <= 5) {
+                return 'Pleno';
+            }
+            else if (years_of_work > 5 && years_of_work < 90) {
+                return 'Senior';
+            }
+            return 'Invalid years of experience.';
+        }
+      </code>
+    </pre>
+  </div>
+  
+  <script>
+    /**
+     * Returns the worker exp in a string
+     * @param {number} years_of_work
+     * @return {string}
+     */
+    function worker_exp(years_of_work) {
+        if (years_of_work >= 0 && years_of_work <= 2) {
+            return 'Junior';
+        }
+        else if (years_of_work > 2 && years_of_work <= 5) {
+            return 'Pleno';
+        }
+        else if (years_of_work > 5 && years_of_work < 90) {
+            return 'Senior';
+        }
+        return 'Invalid years of experience.';
+    }
+
+    console.log(worker_exp(-1))  // Invalid years of experience.
+    console.log(worker_exp(0))  // Junior
+    console.log(worker_exp(1))  // Junior
+    console.log(worker_exp(2))  // Junior
+    console.log(worker_exp(3))  // Pleno
+    console.log(worker_exp(4))  // Pleno
+    console.log(worker_exp(5))  // Pleno
+    console.log(worker_exp(6))  // Senior
+    console.log(worker_exp(7))  // Senior
+    console.log(worker_exp(8))  // Senior
+    console.log(worker_exp(90))  // Invalid years of experience.
+  </script>
+</body>
+</html>
