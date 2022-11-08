@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seção 04 - Escopo de Variáveis</title>
+</head>
+<body>
+  <h1><strong>Seção 04 - Escopo de Variáveis em JS</strong></h1>
+
+  <script>
+    // Escopo de variáveis
+
+    function somar_5(num1, num2) {
+      var valor = 5;
+      return valor + num1 + num2;
+    }
+
+    console.log(somar_5(4, 6));
+
+    /* Se tentarmos chamar a var valor teremos erro,
+    pois ela está no escopo somente da função, já que
+    foi declarada dentro dela.
+     */
+
+    // console.log(valor);  // Uncaught ReferenceError: valor is not defined
+
+    /*
+    Porém, temos acesso à variáveis declaradas dentro
+    de blocos de repetição ou condicionais, pois estas
+    são globais. Somente as variáveis dentro de funções
+    são de escopo local.
+     */
+
+    for (var i = 0; i < 5; i++) {
+      var outra = 5;
+      console.log(i * outra);
+    }
+
+    console.log(outra);
+
+    /*
+    Porém, se declararmos a variável com let em vez de var,
+    ela se torna uma variável local.
+     */
+
+    for (var i = 0; i < 5; i++) {
+      let num = 5;
+      console.log(i * num);
+    }
+
+    console.log(num);  // Uncaught ReferenceError: num is not defined
+
+    /*
+    Logo, sempre que possível, trabalhe com variáveis
+    LOCAIS.
+     */
+  </script>
+</body>
+</html>
