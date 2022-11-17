@@ -101,3 +101,47 @@ idades.sort(
     }
 );
 console.log(idades);
+
+
+// Deletando dados de um array
+delete idades[3];  // Mantém o tamanho do Array, deixando o espaço undefined.
+console.log(idades);
+
+idades.splice(3, 1);  // Muda o tamanho do Array.
+console.log(idades);
+
+// Utilizando o splice pra adicionar elementos antes do valor especificado
+idades.splice(3, 0, 56, 89);
+console.log(idades);
+
+// Iterar em um Array
+for (let i = 0; i < idades.length; i++) {
+    console.log(idades[i]);
+}
+
+// Removendo o último elemento de um Array
+idades.pop();  // Remove e retorna o ultimo elemento
+console.log(idades);
+
+// Removendo o primeiro elemento de um Array
+idades.shift();  // Remove e retorna o primeiro elemento
+console.log(idades);
+
+// Adicionando elementos no ínicio do Array
+idades.unshift(99);
+console.log(idades);
+
+// Retornar um Array a partir do índice especificado
+var novo = idades.slice(3);
+console.log(novo);
+
+var novo = idades.slice(1, 2); // retorna o 1 e para no 1
+console.log(novo);
+
+// Concatena dois Arrays
+var res = idades.concat(novo);
+console.log(res);
+
+// Ordenar
+res.sort(function (a, b){return a - b});
+console.log(res);
